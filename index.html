@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Για τη Μαίρη · Aegean Airlines</title>
+  <meta name="description" content="23 χρόνια αφοσίωσης. Ένα αντίο με αγάπη από την ομάδα σου." />
+  <meta name="theme-color" content="#003E74" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #001e3c 0%, #003E74 60%, #005a9e 100%);
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 52px 20px 72px;
+      text-align: center;
+    }
+
+    /* badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 100px;
+      padding: 6px 18px 6px 12px;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 44px;
+    }
+    .badge-plane { font-size: 1rem; }
+
+    /* hero */
+    .sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #f0c84a;
+      margin-bottom: 12px;
+      animation: up 0.7s 0.2s both;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.4rem, 14vw, 5rem);
+      line-height: 1;
+      background: linear-gradient(135deg, #fff 40%, #f0c84a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+      animation: up 0.8s 0.35s both;
+    }
+    .years {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 40px;
+      animation: up 0.8s 0.5s both;
+    }
+    .years strong { color: #f0c84a; font-style: normal; }
+
+    /* rule */
+    .rule {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto 40px;
+      max-width: 260px;
+      animation: up 0.7s 0.65s both;
+    }
+    .rule::before, .rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    }
+    .rule span { color: #f0c84a; font-size: 0.85rem; }
+
+    /* message */
+    .msg {
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+      line-height: 1.85;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 48px;
+      animation: up 0.9s 0.8s both;
+    }
+    .msg em {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #fff;
+    }
+
+    /* team */
+    .team-lbl {
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+      margin-bottom: 20px;
+      animation: up 0.8s 1.0s both;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px 10px;
+      margin-bottom: 56px;
+      animation: up 0.9s 1.1s both;
+    }
+    .chip {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 100px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .chip.star {
+      background: rgba(212,160,23,0.18);
+      border-color: rgba(212,160,23,0.45);
+      color: #f0c84a;
+      font-weight: 500;
+      font-size: 0.98rem;
+      padding: 9px 24px;
+    }
+
+    /* quote */
+    .quote {
+      border-left: 3px solid #D4A017;
+      text-align: left;
+      padding: 24px 24px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 52px;
+      animation: up 0.9s 1.35s both;
+    }
+    .quote blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(0.98rem, 3vw, 1.1rem);
+      line-height: 1.75;
+      color: rgba(255,255,255,0.88);
+    }
+    .quote cite {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #f0c84a;
+    }
+
+    /* footer */
+    footer {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.1em;
+      animation: up 0.7s 1.6s both;
+    }
+
+    @keyframes up {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="badge">
+    <span class="badge-plane">✈</span>
+    Aegean Airlines · Κρατήσεις &amp; Εκδόσεις
+  </div>
+
+  <p class="sub">Aegean Airlines · Κρατήσεις &amp; Εκδόσεις</p>
+  <h1>Η ομάδα μου</h1>
+  <p class="years"><em>23 χρόνια</em> μαζί σας — <strong>αξέχαστα</strong></p>
+
+  <div class="rule"><span>✦</span></div>
+
+  <p class="msg">
+    Αυτή η σελίδα είναι για εσάς — την ομάδα που με έκανε
+    να θέλω να έρχομαι κάθε μέρα στη δουλειά.
+    <br /><br />
+    <em>Είκοσι τρία χρόνια</em> γέλιο, αλληλεγγύη και κοινή αγάπη
+    για αυτό που κάνουμε. Σας κρατάω όλους μέσα μου
+    όπου κι αν πάω.
+    <br /><br />
+    Σας αγαπώ. &nbsp;— Μαίρη
+  </p>
+
+  <p class="team-lbl">Οι άνθρωποί μου</p>
+  <div class="chips">
+    <span class="chip">Emmanouela</span>
+    <span class="chip">Maria P.</span>
+    <span class="chip">Giouli</span>
+    <span class="chip">Gogo</span>
+    <span class="chip">Lydia</span>
+    <span class="chip star">✦ Mary ✦</span>
+    <span class="chip">Renia</span>
+    <span class="chip">Manos</span>
+    <span class="chip">Maria K.</span>
+    <span class="chip">Kostoula</span>
+  </div>
+
+  <div class="quote">
+    <blockquote>
+      "Δεν χάνεις ανθρώπους που αγαπάς —
+      τους παίρνεις μαζί σου."
+    </blockquote>
+    <cite>— Μαίρη · Aegean Airlines 2001–2024</cite>
+  </div>
+
+  <footer>✦ &nbsp; Με αγάπη, Μαίρη &nbsp; ✦</footer>
+
+</div>
+</body>
+</html>
