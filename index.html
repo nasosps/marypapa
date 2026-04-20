@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Για τη Μαίρη · Aegean Airlines</title>
-  <meta name="description" content="23 χρόνια αφοσίωσης. Ένα αντίο με αγάπη από την ομάδα σου." />
+  <title>Για τη Μαίρη · Με Αγάπη</title>
+  <meta name="description" content="Μια κάρτα με ευχές, ευγνωμοσύνη και αγάπη από τη Μαίρη προς την ομάδα της." />
   <meta name="theme-color" content="#003E74" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
     }
 
     .wrapper {
-      max-width: 520px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 52px 20px 72px;
       text-align: center;
@@ -93,11 +93,27 @@
 
     /* message */
     .msg {
-      font-size: clamp(0.95rem, 3vw, 1.05rem);
-      line-height: 1.85;
+      text-align: left;
+      font-size: clamp(0.98rem, 2.1vw, 1.08rem);
+      line-height: 1.9;
       color: rgba(255,255,255,0.82);
       margin-bottom: 48px;
+      padding: 28px 24px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
       animation: up 0.9s 0.8s both;
+    }
+    .msg p {
+      margin-bottom: 16px;
+    }
+    .msg p:last-child {
+      margin-bottom: 0;
+    }
+    .msg .standout {
+      color: #fff;
+      font-weight: 500;
     }
     .msg em {
       font-family: 'Playfair Display', serif;
@@ -168,10 +184,29 @@
 
     /* footer */
     footer {
-      font-size: 0.7rem;
-      color: rgba(255,255,255,0.28);
-      letter-spacing: 0.1em;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.42);
+      letter-spacing: 0.08em;
       animation: up 0.7s 1.6s both;
+    }
+
+    @media (max-width: 640px) {
+      .wrapper {
+        padding: 40px 16px 56px;
+      }
+
+      .badge {
+        margin-bottom: 32px;
+      }
+
+      .msg,
+      .quote {
+        padding: 22px 18px;
+      }
+
+      .chips {
+        margin-bottom: 44px;
+      }
     }
 
     @keyframes up {
@@ -188,22 +223,35 @@
     Aegean Airlines · Κρατήσεις &amp; Εκδόσεις
   </div>
 
-  <p class="sub">Aegean Airlines · Κρατήσεις &amp; Εκδόσεις</p>
+  <p class="sub">Μια κάρτα με ευχές</p>
   <h1>Η ομάδα μου</h1>
-  <p class="years"><em>23 χρόνια</em> μαζί σας — <strong>αξέχαστα</strong></p>
+  <p class="years"><em>Ένα κομμάτι της ζωής μου</em> που θα μείνει πάντα μέσα μου</p>
 
   <div class="rule"><span>✦</span></div>
 
-  <p class="msg">
-    Αυτή η σελίδα είναι για εσάς — την ομάδα που με έκανε
-    να θέλω να έρχομαι κάθε μέρα στη δουλειά.
-    <br /><br />
-    <em>Είκοσι τρία χρόνια</em> γέλιο, αλληλεγγύη και κοινή αγάπη
-    για αυτό που κάνουμε. Σας κρατάω όλους μέσα μου
-    όπου κι αν πάω.
-    <br /><br />
-    Σας αγαπώ. &nbsp;— Μαίρη
-  </p>
+  <div class="msg">
+    <p>Αυτή η σελίδα είναι για την ομάδα μου, ένα κομμάτι της ζωής μου.</p>
+    <p>
+      Μέσα σε αυτά τα χρόνια μοιραστήκαμε τα πάντα: γέλια μέχρι δακρύων, στιγμές έντασης, δυσκολίες που μας
+      δοκίμασαν.... Και όμως, στεκόμασταν πάντα ο ένας δίπλα στον άλλον.
+    </p>
+    <p>
+      Με βλέμματα που λέγαμε περισσότερα από λέξεις. Εκείνες οι στιγμές, που κάποιος ήταν πάντα εκεί να βοηθήσει χωρίς
+      καν να το ζητήσεις.
+    </p>
+    <p class="standout">Αυτή είναι η δύναμή μας.</p>
+    <p>Γιατί τελικά, δεν ήταν η δουλειά. Ηταν οι άνθρωποι... εσείς..</p>
+    <p>
+      Φεύγω με την καρδιά μου γεμάτη. Γεμάτη από εσάς, από όλα όσα ζήσαμε, από όλα όσα θα κουβαλάω πάντα μέσα μου.
+    </p>
+    <p>
+      Σας εύχομαι ολόψυχα να συνεχίσετε να προχωράτε δυνατοί, να στηρίζετε ο ένας τον άλλον όπως πάντα και να μην
+      χάσετε ποτέ αυτό που σας κάνει ξεχωριστούς.
+    </p>
+    <p class="standout">Σας παίρνω μαζί μου.</p>
+    <p>Σας ευχαριστώ για όλα..</p>
+    <p class="standout">Σας αγαπώ!</p>
+  </div>
 
   <p class="team-lbl">Οι άνθρωποί μου</p>
   <div class="chips">
@@ -221,10 +269,9 @@
 
   <div class="quote">
     <blockquote>
-      "Δεν χάνεις ανθρώπους που αγαπάς —
-      τους παίρνεις μαζί σου."
+      "Γιατί κάποια μαζί, δεν τελειώνουν ποτέ!"
     </blockquote>
-    <cite>— Μαίρη · Aegean Airlines 2001–2024</cite>
+    <cite>— Μαίρη</cite>
   </div>
 
   <footer>✦ &nbsp; Με αγάπη, Μαίρη &nbsp; ✦</footer>
